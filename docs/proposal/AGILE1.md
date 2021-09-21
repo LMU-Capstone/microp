@@ -51,4 +51,4 @@ The timeline and division of responsibilities can be seen in Figure 1, with work
 
 Figure 1: Schedule of Work
 
-
+![Screenshot from 2021-09-20 19-21-35](https://user-images.githubusercontent.com/40191185/134102124-98935948-cdea-476f-8c65-c09ea26ad542.png)
