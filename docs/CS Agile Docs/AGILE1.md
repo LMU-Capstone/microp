@@ -25,8 +25,11 @@ Additional testing frameworks will be built using hardware in the loop testing. 
 
 The KORUZA system is preferred due to its high bitrate; however, other open hardware systems like TwiBright's Ronja are considered. These systems will be selected based on EE department approval and further discussion with optics professor Dr. Asghari.
 
+Figure 1 shows the technical specifications of the transceiver system.
+![image](https://user-images.githubusercontent.com/40191185/134425809-ba5a7f2f-afd6-49e3-84e9-e4984ec8b118.png)
+
 # Semester Deliverables:
-The timeline is found in the Gannt Chart.xlsx and in Figure 1 of the 'MICROP Proposal.pdf'. At the end of this semester, the group will have demonstrated the ability to communicate through static free space optical systems.
+The timeline is found in the Gannt Chart.xlsx and in Figure 2 of the 'MICROP Proposal.pdf'. At the end of this semester, the group will have demonstrated the ability to communicate through static free space optical systems.
 
 Hardware construction will be completed mid-semester and transmit/receive programs will be completed. Dynamic movement and tracking software are to be introduced next semester as the continuation of this project.
 
@@ -58,10 +61,10 @@ The deliverable is a UAV-mountable system that can transit between two moving dr
 
 This project will consist of a free-space optical system and drones. The drones are already available in the lab. Open-source hardware solutions exist for free-space optical systems, including Twibright Lab’s Ronja solution and IRNAS’s KORUZA system. Ronja is significantly cheaper and has a longer range, but has a much lower transmission rate at approximately 10Mbps. KORUZA is more expensive and has a shorter range, but can achieve a bitrate of approximately 10Gbps. Ronja has a unit cost of $100 with two units totaling $200. KORUZA is approximately $200 per unit; however, this cost includes PCB builds that must be ordered in bulk. So the total cost is only $300 for two units. KORUZA, though, requires two Raspberry Pi Microcomputers (RPi). The RPis cost $80 per unit, bringing the total cost of the system to $460. This leaves a smaller margin of error for costs in the KORUZA system. However, the use of laboratory equipment could reduce this cost. For example, fasteners are likely available and many of the pieces can be 3D printed using LMU’s existing printers. Because it falls within the price range, the KORUZA system is preferred for its higher bitrate.
 
-The timeline and division of responsibilities can be seen in Figure 1, with work split roughly in half between the transmit and receive sides between the two researchers.
+The timeline and division of responsibilities can be seen in Figure 2, with work split roughly in half between the transmit and receive sides between the two researchers.
 
 
 
-Figure 1: Schedule of Work
+Figure 2: Schedule of Work
 
 ![Screenshot from 2021-09-20 19-21-35](https://user-images.githubusercontent.com/40191185/134102124-98935948-cdea-476f-8c65-c09ea26ad542.png)
