@@ -4,6 +4,17 @@ Ian Green && Natalia Cedeno
 # Scope of this document:
 Project Description, justification, and scope are found in 'MICROP Proposal.pdf'. This document will focus on the software components of this project. For simplicity, this document is copied at the end of this markdown file in its entirety.
 
+# Project Description Summary
+This project is a two-semester project. In the Fall 2021 semester, a static free space optical communication system will be designed, built, and tested for communication in the 10Ghz range. SATA connections will be used, limiting real transmit speed to 6Ghz maximum. This SATA connection to PC is novel and will be developed. Further software will be developed to create signals for communication at 6GHz, beyond the clock limit of available CPUs.
+
+## Problem Being Solved
+This project has the eventual aim of creating optical relays for over the horizon communication to allow for high-bandwidth communication between naval ships in RF denied environments. However, this semester will create a testbed for high bandwidth communication in the amateur environment. This is a novel approach to use SATA connections to a large desktop computer and will contribute to low-cost applications of free space optical communication systems. 
+
+## Customers
+Usage of free space optical communication is being used by the military in future developments for its high-bandwidth, low-sidelobe abilities in RF denied environments. However, as prices reduce, many users could find benefits from systems like this. High bitrates are increasingly desired by commerical customers and a cheap solution will allow hobbyist usage of the system.
+
+# Justification
+Free space optical communication systems can cost upwards of $10 million, with even cheap at home solutions priced at $500,000. This is prohibitive and makes research inaccessible to average users. Price reductions will improve research and allow amateur usage of advanced communication systems.
 
 # Software Technical Documentations
 The tech stack is fairly simple on the systems side; however, implementation will be difficult. A hardware interface will be constructed and programmed. The specifics of the interface will be chosen during the research phase of this project.
@@ -18,6 +29,8 @@ The KORUZA system is preferred due to its high bitrate; however, other open hard
 The timeline is found in the Gannt Chart.xlsx and in Figure 1 of the 'MICROP Proposal.pdf'. At the end of this semester, the group will have demonstrated the ability to communicate through static free space optical systems.
 
 Hardware construction will be completed mid-semester and transmit/receive programs will be completed. Dynamic movement and tracking software are to be introduced next semester as the continuation of this project.
+
+Novel testing systems must be developed to test 10GHz transmit times on systems with CPUs below 4GHz and on wires with less than 6GHz bandwidth. 
 
 # Appendix:
 https://lmu-ee-capstone.atlassian.net/jira/software/projects/MIC/boards/1/roadmap
