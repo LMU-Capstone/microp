@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/microp/static/css/main.a617e044.chunk.css",
-    "main.js": "/microp/static/js/main.cc4daf4b.chunk.js",
-    "main.js.map": "/microp/static/js/main.cc4daf4b.chunk.js.map",
+    "main.js": "/microp/static/js/main.0af4c74c.chunk.js",
+    "main.js.map": "/microp/static/js/main.0af4c74c.chunk.js.map",
     "runtime-main.js": "/microp/static/js/runtime-main.8787570d.js",
     "runtime-main.js.map": "/microp/static/js/runtime-main.8787570d.js.map",
-    "static/js/2.87a8db6a.chunk.js": "/microp/static/js/2.87a8db6a.chunk.js",
-    "static/js/2.87a8db6a.chunk.js.map": "/microp/static/js/2.87a8db6a.chunk.js.map",
+    "static/js/2.f4c71939.chunk.js": "/microp/static/js/2.f4c71939.chunk.js",
+    "static/js/2.f4c71939.chunk.js.map": "/microp/static/js/2.f4c71939.chunk.js.map",
     "static/js/3.d2919c02.chunk.js": "/microp/static/js/3.d2919c02.chunk.js",
     "static/js/3.d2919c02.chunk.js.map": "/microp/static/js/3.d2919c02.chunk.js.map",
     "index.html": "/microp/index.html",
     "static/css/main.a617e044.chunk.css.map": "/microp/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.87a8db6a.chunk.js.LICENSE.txt": "/microp/static/js/2.87a8db6a.chunk.js.LICENSE.txt"
+    "static/js/2.f4c71939.chunk.js.LICENSE.txt": "/microp/static/js/2.f4c71939.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8787570d.js",
-    "static/js/2.87a8db6a.chunk.js",
+    "static/js/2.f4c71939.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.cc4daf4b.chunk.js"
+    "static/js/main.0af4c74c.chunk.js"
   ]
 }
