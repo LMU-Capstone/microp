@@ -12,10 +12,15 @@ Figure 2: Overview of System
 
 # Improvement Plan
 WHAT your team wants to improve on and WHY before presenting for your final presentation
+
 1. We are improving our test software to test via fiber cable. This better allows for backend testing without worrying about issues in the FSOC portion of the system. This required the purcahse of an LC cable; however, this additional purchase can help in collimating the beam.
+
 2. We are moving from C++ to Python to facilitate easier network programming. Although C++ works well with our interface and is very fast, it will make future development more difficult. Eventually, we will need to move our software to a Raspberry Pi and send our data over WiFi. This is a challenge on C++ and Python will make it easier. Python is able to meet our 1Gbps requirement
+
 3. We are changing our steering system from motorized to scanner based. By moving to a scanner, we increase the cost and complexity of the system but increase the reliability of aiming and its speed. Testing found the motor to be too slow for the requirements
+
 4. We updated our lens from 150cm to 170cm to allow for more spacing between our lense and SFP module/media converter because wires required more spacing in front of the media converter.
+
 5. We are changing to an ethernet connection in lieu of direct to usb connections to make interfacing with additional devices easier. The USB connection would require USB3.1+ standards, which was unreasonable with the Raspberry Pis available and within cost. Instead, Ethernet is easier to find at high bitrates.
 
 # House of Quality

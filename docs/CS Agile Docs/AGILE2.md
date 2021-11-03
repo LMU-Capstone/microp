@@ -57,6 +57,7 @@ Novel testing systems must be developed to test 10GHz transmit times on systems 
 
 # Improvement Plan
 WHAT your team wants to improve on and WHY before presenting for your final presentation
+
 1. We are improving our test software to test via fiber cable. This better allows for backend testing without worrying about issues in the FSOC portion of the system. This required the purcahse of an LC cable; however, this additional purchase can help in collimating the beam.
 
 2. We are moving from C++ to Python to facilitate easier network programming. Although C++ works well with our interface and is very fast, it will make future development more difficult. Eventually, we will need to move our software to a Raspberry Pi and send our data over WiFi. This is a challenge on C++ and Python will make it easier. Python is able to meet our 1Gbps requirement
