@@ -8,6 +8,8 @@ Version 2 updated the following:
 - Added 'House of Quality' section
 - Added 'Improvement Plan' section
 - Modified scope of document to reflect expansion to Hardware components (Line 15)
+- Added section header for gannt chart
+- Moved schedule above appendix into main body
 
 
 # Scope of this document:
@@ -34,7 +36,6 @@ Figure 1: Block diagram of hardware
 Figure 2: Overview of System
 ![image](https://user-images.githubusercontent.com/40191185/140232676-52fd4d2f-dff5-4cfd-b3d8-08368df5482f.png)
 
-
 # Software Technical Documentations
 The tech stack is fairly simple on the systems side; however, implementation will be difficult. A hardware interface will be constructed and programmed. The specifics of the interface will be chosen during the research phase of this project.
 
@@ -54,10 +55,30 @@ Hardware construction will be completed mid-semester and transmit/receive progra
 
 Novel testing systems must be developed to test 10GHz transmit times on systems with CPUs below 4GHz and on wires with less than 6GHz bandwidth. 
 
+# Improvement Plan
+WHAT your team wants to improve on and WHY before presenting for your final presentation
+1. We are improving our test software to test via fiber cable. This better allows for backend testing without worrying about issues in the FSOC portion of the system. This required the purcahse of an LC cable; however, this additional purchase can help in collimating the beam.
+2. We are moving from C++ to Python to facilitate easier network programming. Although C++ works well with our interface and is very fast, it will make future development more difficult. Eventually, we will need to move our software to a Raspberry Pi and send our data over WiFi. This is a challenge on C++ and Python will make it easier. Python is able to meet our 1Gbps requirement
+3. We are changing our steering system from motorized to scanner based. By moving to a scanner, we increase the cost and complexity of the system but increase the reliability of aiming and its speed. Testing found the motor to be too slow for the requirements
+4. We updated our lens from 150cm to 170cm to allow for more spacing between our lense and SFP module/media converter because wires required more spacing in front of the media converter.
+5. We are changing to an ethernet connection in lieu of direct to usb connections to make interfacing with additional devices easier. The USB connection would require USB3.1+ standards, which was unreasonable with the Raspberry Pis available and within cost. Instead, Ethernet is easier to find at high bitrates.
+
+
+# House of Quality
+Figure 4: A House of Quality Decision Matrix
+![image](https://user-images.githubusercontent.com/40191185/140232859-f4a6c398-6abe-4995-b05d-5a9e53c808e4.png)
+
+# Schedule
+Figure 5: Schedule of Work
+![Screenshot from 2021-09-20 19-21-35](https://user-images.githubusercontent.com/40191185/134102124-98935948-cdea-476f-8c65-c09ea26ad542.png)
+
+
 # Appendix:
 https://lmu-ee-capstone.atlassian.net/jira/software/projects/MIC/boards/1/roadmap
 
 https://github.com/LMU-Capstone/microp
+
+https://github.com/LMU-Capstone/microp/tree/main/docs/CS%20Agile%20Docs
 
 
 # MICROP Proposal
@@ -81,12 +102,3 @@ The deliverable is a UAV-mountable system that can transit between two moving dr
 This project will consist of a free-space optical system and drones. The drones are already available in the lab. Open-source hardware solutions exist for free-space optical systems, including Twibright Lab’s Ronja solution and IRNAS’s KORUZA system. Ronja is significantly cheaper and has a longer range, but has a much lower transmission rate at approximately 10Mbps. KORUZA is more expensive and has a shorter range, but can achieve a bitrate of approximately 10Gbps. Ronja has a unit cost of $100 with two units totaling $200. KORUZA is approximately $200 per unit; however, this cost includes PCB builds that must be ordered in bulk. So the total cost is only $300 for two units. KORUZA, though, requires two Raspberry Pi Microcomputers (RPi). The RPis cost $80 per unit, bringing the total cost of the system to $460. This leaves a smaller margin of error for costs in the KORUZA system. However, the use of laboratory equipment could reduce this cost. For example, fasteners are likely available and many of the pieces can be 3D printed using LMU’s existing printers. Because it falls within the price range, the KORUZA system is preferred for its higher bitrate.
 
 The timeline and division of responsibilities can be seen in Figure 2, with work split roughly in half between the transmit and receive sides between the two researchers.
-
-# House of Quality
-Figure 4: A House of Quality Decision Matrix
-![image](https://user-images.githubusercontent.com/40191185/140232859-f4a6c398-6abe-4995-b05d-5a9e53c808e4.png)
-
-
-Figure 5: Schedule of Work
-
-![Screenshot from 2021-09-20 19-21-35](https://user-images.githubusercontent.com/40191185/134102124-98935948-cdea-476f-8c65-c09ea26ad542.png)
