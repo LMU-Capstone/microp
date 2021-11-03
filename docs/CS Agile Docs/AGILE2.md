@@ -6,7 +6,6 @@ All changes to version
 Version 2 updated the following:
 - Added 'Hardware Overview' Section and new hardware diagrams (Line 29)
 - Added 'House of Quality' section
-- Added Links to EE requirements 
 - Added 'Improvement Plan' section
 - Modified scope of document to reflect expansion to Hardware components (Line 15)
 
@@ -29,6 +28,13 @@ Free space optical communication systems can cost upwards of $10 million, with e
 # Hardware Overview
 The primary transceiver is a SFP module operating in the 850nm range. This device is connected to a media converter and a 170cm focal length lens is used to focus the beam. Additional collimation may be performed using the LC wire. 
 
+Figure 1: Block diagram of hardware
+![image](https://user-images.githubusercontent.com/40191185/140232601-5b7512a6-b707-49e5-a683-2796c40875e0.png)
+
+Figure 2: Overview of System
+![image](https://user-images.githubusercontent.com/40191185/140232676-52fd4d2f-dff5-4cfd-b3d8-08368df5482f.png)
+
+
 # Software Technical Documentations
 The tech stack is fairly simple on the systems side; however, implementation will be difficult. A hardware interface will be constructed and programmed. The specifics of the interface will be chosen during the research phase of this project.
 
@@ -38,7 +44,7 @@ Additional testing frameworks will be built using hardware in the loop testing. 
 
 The KORUZA system is preferred due to its high bitrate; however, other open hardware systems like TwiBright's Ronja are considered. These systems will be selected based on EE department approval and further discussion with optics professor Dr. Asghari.
 
-Figure 1 shows the technical specifications of the transceiver system.
+Figure 3 shows the technical specifications of the transceiver system.
 ![image](https://user-images.githubusercontent.com/40191185/134425809-ba5a7f2f-afd6-49e3-84e9-e4984ec8b118.png)
 
 # Semester Deliverables:
@@ -76,8 +82,11 @@ This project will consist of a free-space optical system and drones. The drones 
 
 The timeline and division of responsibilities can be seen in Figure 2, with work split roughly in half between the transmit and receive sides between the two researchers.
 
+# House of Quality
+Figure 4: A House of Quality Decision Matrix
+![image](https://user-images.githubusercontent.com/40191185/140232859-f4a6c398-6abe-4995-b05d-5a9e53c808e4.png)
 
 
-Figure 2: Schedule of Work
+Figure 5: Schedule of Work
 
 ![Screenshot from 2021-09-20 19-21-35](https://user-images.githubusercontent.com/40191185/134102124-98935948-cdea-476f-8c65-c09ea26ad542.png)
