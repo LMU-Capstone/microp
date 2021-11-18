@@ -60,5 +60,10 @@ Differences are from continuously postponing the website. We are using an interi
 
 ![image](https://user-images.githubusercontent.com/40191185/142334855-e64a6584-80b5-4247-8d00-97b36abb2d72.png)
 
+This timeline is made to match the Gannt chart from the beginning of the semester.
+![image](https://user-images.githubusercontent.com/40191185/142336489-955ff14b-749e-448f-b142-80aa064e1cbf.png)
+
+
 
 # Board (link)
+https://lmu-ee-capstone.atlassian.net/jira/software/projects/MIC/boards/1
