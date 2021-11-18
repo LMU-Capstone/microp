@@ -20,6 +20,7 @@ My stories were lost when sprints were completed and I'm very confused on how to
   Goal: To finalize a design for the free space optical system, including plans for incremental testing. This design requirements are discussed in the requirements documents.
   
   Story: DelphinO Delta (DoD) is a customer requiring secure, fast communication between two abitrary, moving points. The design must meet the project obectives outlines in the requirements documentation. These communications are to be used in hostile environments and must be resilient communcation with explainable design.
+  
   Ian and Natalia need a system that can be used to communicate at 1Gbps in free-space to test a dynamic movement system.
 
 ### Sprint 2: Parts Selection
@@ -27,6 +28,7 @@ My stories were lost when sprints were completed and I'm very confused on how to
   Goal: To find parts meeting design requirements and price limitations. These decisions are shown in the decision matrices.
   
   Story: As a customer, Ian wants a system that can operate as designed within budget. He requires parts that meet specifications, without adding delays to the building timeline.
+  
   As a researcher, Natalia wants a system that does not have unexpected issues with compatibility.
 
 ### Sprint 3: Hardware Construction/Interface
@@ -34,6 +36,7 @@ My stories were lost when sprints were completed and I'm very confused on how to
   Goal: Assemble parts and test individual components to confirm they operate as intended. Interfaces must be constructed on the software side
   
   Story: As a researcher, Ian wants to be able to send data easily using standard TCP or UDP connections to allow for easier connections with existing libraries. The software must connect as an internet port 'behind the scenes'
+  
   As a researcher, Ian wants his hardware to function and work together properly.
 
 ### Sprint 4: Hardware Continued and V&V
@@ -41,6 +44,7 @@ My stories were lost when sprints were completed and I'm very confused on how to
   Goal: Finish construction of MVP and perform fiber and unidirectional free space V&V to test parts individually.
   
   Story: As a customer, Natalia wants to be sure that each piece is working as intended and that no piece is simply 'barely functioning' and simply passed minimal testing. Rigorous testing is required to ensure this.
+  
   As a reasearcher, Ian wants the device to send data at 1Gbps over fiber cable.
 
 # LOE per story (estimated)
