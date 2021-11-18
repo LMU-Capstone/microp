@@ -63,7 +63,8 @@ Differences are from continuously postponing the website. We are using an interi
 This timeline is made to match the Gannt chart from the beginning of the semester.
 ![image](https://user-images.githubusercontent.com/40191185/142336489-955ff14b-749e-448f-b142-80aa064e1cbf.png)
 
-
-
 # Board (link)
 https://lmu-ee-capstone.atlassian.net/jira/software/projects/MIC/boards/1
+
+# 'Individual'
+Because I'm not 'really' alone, Natalia and I mostly just did the assignments in our EE class. However, to be sure, I had Megan T (another EE) do some sprint planning with me and watched her sprint meetings
