@@ -15,6 +15,8 @@ My stories were lost when sprints were completed and I'm very confused on how to
 
 **Stories don't make as much sense with hardware honestly. A lot of time is spent preparing for construction that doesn't create unique user stories (there are no new UX from selecting parts). Also, a lot of time is spent 1) testing hardware and 2) actually connecting hardware. If you want to dock points, I understand but I honestly can't think of a way to make stories for things like 'we bought the right parts by checking lots and lots spreadsheets and making decision matrices for each based on performance parameters'.**
 
+**I did not do the 'Archive' Column because I didn't read that requirement until due date (and just 'completed' Sprint' for simplicity) BUT! You can look at 'Roadmap' and see the breakdown of work! Just the stories were lost, but thank God I wrote those down in a separate document**
+
 ### Sprint 1: Design 
 
   Goal: To finalize a design for the free space optical system, including plans for incremental testing. This design requirements are discussed in the requirements documents.
