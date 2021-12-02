@@ -182,3 +182,77 @@ The deliverable is a UAV-mountable system that can transit between two moving dr
 This project will consist of a free-space optical system and drones. The drones are already available in the lab. Open-source hardware solutions exist for free-space optical systems, including Twibright Lab’s Ronja solution and IRNAS’s KORUZA system. Ronja is significantly cheaper and has a longer range, but has a much lower transmission rate at approximately 10Mbps. KORUZA is more expensive and has a shorter range, but can achieve a bitrate of approximately 10Gbps. Ronja has a unit cost of $100 with two units totaling $200. KORUZA is approximately $200 per unit; however, this cost includes PCB builds that must be ordered in bulk. So the total cost is only $300 for two units. KORUZA, though, requires two Raspberry Pi Microcomputers (RPi). The RPis cost $80 per unit, bringing the total cost of the system to $460. This leaves a smaller margin of error for costs in the KORUZA system. However, the use of laboratory equipment could reduce this cost. For example, fasteners are likely available and many of the pieces can be 3D printed using LMU’s existing printers. Because it falls within the price range, the KORUZA system is preferred for its higher bitrate.
 
 The timeline and division of responsibilities can be seen in Figure 2, with work split roughly in half between the transmit and receive sides between the two researchers.
+
+
+# Appendix C: Agile SCRUM 
+
+## Retrospective Summary
+  Natalia and Ian used SCRUM in their Agile planning with weekly standups Tuesdays at 8am. The springs were roughly broken up into Design and Preparation, Hardware Construction, and Validation & Verification. Standups were performed with Dr. Asghari of the EECE Department.  
+  
+### Learnings/Retrospective
+1. This semester taught me the importance of documenting everything. Because of the plethora of documents we created, it is easy to answer questions about my project and justify. Every single product selected has tables to  backup our purchase and we have dozens of pages of project objectives and requirements that allow us to easily benchmark success.
+2. I do not like Agile SCRUM much. I use Kanban at work and it personally works better for me. At least for this project, sprints felt artificial and unnecessary. I think it would work really well for software, but as a project that had lots of hardware, it required weird 'splits' in our work that Natalia and I didn't like. I think a series of 'ToDo' items fits better and would eliminate this weird split in work.
+3. Currently, between the two classes, our work is split between 4 different 'repos'. I work in the GitHub for CS assignments; Natalia and I submit to Microsoft Teams for EE; Natalia and I personally work on OneDrive; and, both classes use Brightspace for submission. Next semester, I will work to unify our work into one location.
+4. Testing should have been a larger part of our plan. While we were able to finish our testing on time, it was difficult are required a long few days of near-constant testing. Also, by using a personal laptop for testing, we were limited to the abilities of one laptop, which created performance issues.
+5. Natalia and I both with we spent more time on designing the system. While we spent quite a lot finalizing our design and working parts, we spent less time on learning the concepts behind our purchases. This made the learning curve quite difficult once parts arrived as we had to quickly learn how to interface with our hardware to immediately begin tests.
+6. Order early! Purchases take a lot of time to arrive and this created bottlenecks in our process.
+
+## Epics / Stories
+
+My stories were lost when sprints were completed and I'm very confused on how to recover them. To that end, they are re-typed here
+
+**Stories don't make as much sense with hardware honestly. A lot of time is spent preparing for construction that doesn't create unique user stories (there are no new UX from selecting parts). Also, a lot of time is spent 1) testing hardware and 2) actually connecting hardware. If you want to dock points, I understand but I honestly can't think of a way to make stories for things like 'we bought the right parts by checking lots and lots spreadsheets and making decision matrices for each based on performance parameters'.**
+
+**I did not do the 'Archive' Column because I didn't read that requirement until due date (and just 'completed' Sprint' for simplicity) BUT! You can look at 'Roadmap' and see the breakdown of work! Just the stories were lost, but thank God I wrote those down in a separate document**
+
+#### Sprint 1: Design 
+
+  Goal: To finalize a design for the free space optical system, including plans for incremental testing. This design requirements are discussed in the requirements documents.
+  
+  Story: DelphinO Delta (DoD) is a customer requiring secure, fast communication between two abitrary, moving points. The design must meet the project obectives outlines in the requirements documentation. These communications are to be used in hostile environments and must be resilient communcation with explainable design.
+  
+  Ian and Natalia need a system that can be used to communicate at 1Gbps in free-space to test a dynamic movement system.
+
+#### Sprint 2: Parts Selection
+
+  Goal: To find parts meeting design requirements and price limitations. These decisions are shown in the decision matrices.
+  
+  Story: As a customer, Ian wants a system that can operate as designed within budget. He requires parts that meet specifications, without adding delays to the building timeline.
+  
+  As a researcher, Natalia wants a system that does not have unexpected issues with compatibility.
+
+#### Sprint 3: Hardware Construction/Interface
+
+  Goal: Assemble parts and test individual components to confirm they operate as intended. Interfaces must be constructed on the software side
+  
+  Story: As a researcher, Ian wants to be able to send data easily using standard TCP or UDP connections to allow for easier connections with existing libraries. The software must connect as an internet port 'behind the scenes'
+  
+  As a researcher, Ian wants his hardware to function and work together properly.
+
+#### Sprint 4: Hardware Continued and V&V
+
+  Goal: Finish construction of MVP and perform fiber and unidirectional free space V&V to test parts individually.
+  
+  Story: As a customer, Natalia wants to be sure that each piece is working as intended and that no piece is simply 'barely functioning' and simply passed minimal testing. Rigorous testing is required to ensure this.
+  
+  As a reasearcher, Ian wants the device to send data at 1Gbps over fiber cable.
+
+## LOE per story (estimated)
+
+Sprint 1 - Design : 30hr (done before start of Agile work so not included specifically)
+Sprint 2 - Parts Selection: 30
+Sprint 3 - Hardware Construction/Interface: 30
+Sprint 4 - Hardware Continued and and V&V: 27
+
+## Burndown Chart
+
+Differences are from continuously postponing the website. We are using an interim wix website for project deliverables in the meantime.
+
+![image](https://user-images.githubusercontent.com/40191185/142334855-e64a6584-80b5-4247-8d00-97b36abb2d72.png)
+
+## Board (link)
+https://lmu-ee-capstone.atlassian.net/jira/software/projects/MIC/boards/1
+
+## 'Individual'
+Because I'm not 'really' alone, Natalia and I mostly just did the assignments in our EE class. However, to be sure, I had Megan T (another EE) do some sprint planning with me and watched her sprint meetings
+
