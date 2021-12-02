@@ -52,6 +52,9 @@ The hardware required:
 
 To perform testing on one machine, [VirtualBox](https://www.virtualbox.org/) was used. Virtualbox can be installed using the [guide](https://www.virtualbox.org/manual/ch02.html). A [Linux Image](https://ubuntu.com/download/desktop) must be downloaded and two virtual machines must be created.
 
+THe network settings of the virtual machines must be changed to Bridge Adapter and connect to each of the two USB-C ethernet ports. This setting is located in the virtual machine's network settings.
+![image](https://user-images.githubusercontent.com/40191185/144337826-21c4853c-7e0c-4e6c-8cdb-3f5377ce2398.png)
+
 
 ## Static FSO Setup and Testing
 1. Static System Testing: 
