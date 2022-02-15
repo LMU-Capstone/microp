@@ -1,0 +1,33 @@
+# help from https://stackoverflow.com/questions/43225401/how-to-compile-a-c-project-with-multiple-directories-using-makefiles
+
+CC = g++
+CGLAFS = -0fast -std=c++11
+TARGET = main
+
+# set source/include folder
+SRC=src
+DEPS=include
+
+#store .o files in separate folder (easier to .gitignore)
+ODIR := ./objects
+OBJS := $(patsubst %.cpp,%.o,$(addprefix $(ODIR)/,$(wildcard $(SRC)/*.cpp)))
+
+# compile all dependent .cpp
+$(ODIR)/%.o:$(SRC)/%.cpp $(DEPS)/%.hpp
+	$(CC) $(CGLAFS) -c -o $@ $<
+
+$(ODIR)/Receiver.o: $(DEPS)/Receiver.hpp $(SRC)/Receiver.cpp
+	$(CC) $(CFLAGS) -c -o $(ODIR)/Receiver.o $(SRC)/Receiver.cpp
+
+$(ODIR)/Pattern.o: $(DEPS)/Pattern.hpp $(SRC)/Pattern.cpp
+	$(CC) $(CFLAGS) -c -o $(ODIR)/Pattern.o $(SRC)/Pattern.cpp
+
+
+# simple program
+$(TARGET): $(OBJS) main.cpp
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cpp
+
+all: $(TARGET)
+
+clean:
+	$(RM) $(TARGET)
