@@ -18,7 +18,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(TARGET).cpp -o $@ $^
 
 
-all: run clean
+all: clean run clean
 
 run: $(TARGET)
 	./$(TARGET)

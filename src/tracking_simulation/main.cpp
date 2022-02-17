@@ -4,7 +4,7 @@
 #include <vector>
 
 #include "include/global.hpp"
-#include "include/Pattern.hpp"
+#include "include/VelocityPattern.hpp"
 #include "include/Receiver.hpp"
 
 double time_function(std::function<void()> );
@@ -12,18 +12,17 @@ double time_function(std::function<void()> );
 
 int main() { 
 
-    Pattern pattern;
-    std::vector<float> temp = {1,2,3,4,5,6,7,8,9,10,11,12,13,14};
-    pattern.set_pattern({1,2,3,4,5,6,7,8,9,10,11,12,13,14});
+    std::vector<std::vector<float>> new_pattern = {{1,2,3}, {4,5,6}, {1,2,8}, {5,4,1}};
 
-    while(!pattern.is_done()){
-        std::cout << pattern.get_next_vector() << std::endl;
+    VelocityPattern p(new_pattern);
+    std::cout << p;
+
+    for(float cur_time = 0.0; cur_time < 10; cur_time++){
+        std::cout << p.get_current_velocity(cur_time)[0] << ", " << p.get_current_velocity(cur_time)[1] << std::endl;
     }
 
-    Receiver r;
-    r.set_point({1,2});
-    std::cout << r << std::endl;
-    r.tick(1.5); 
+    std::cout << "\n";
+    return 0;
 
 }
 
