@@ -1,5 +1,5 @@
-#ifndef PATTERN_H
-#define PATTERN_H
+#ifndef VELOCITYPATTERN_H
+#define VELOCITYPATTERN_H
 
 #include <vector>
 #include <algorithm>
@@ -92,6 +92,6 @@ struct VelocityPattern
 
 
 };
-typedef struct Pattern Pattern;
+typedef struct VelocityPattern VelocityPattern;
 
 #endif
