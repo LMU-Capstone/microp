@@ -47,7 +47,7 @@ struct VelocityPattern
         }
 
 
-        float final_time(){
+        float get_final_time(){
             return (*(this->pattern.end()-1))[2];
         }
 
@@ -56,14 +56,14 @@ struct VelocityPattern
             
             // search from the last time to now (likely only going forward in time)
             for(auto it = this->last_velocity; it < this->pattern.end(); it++){
-                if(current_time < (*it)[2] ){
+                if(current_time <= (*it)[2] ){
                     this->last_velocity = it;
                     return {(*it)[0], (*it)[1]}; // return primitives for scoping issues
                 }
             }
             //if not found, try searching from start to current position
             for(auto it = this->pattern.begin(); it < this->last_velocity; it++){
-                if(current_time < (*it)[2] ){
+                if(current_time <= (*it)[2] ){
                     this->last_velocity = it;
                     return {(*it)[0], (*it)[1]}; // return primitives for scoping issues
                 }
