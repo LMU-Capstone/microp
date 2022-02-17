@@ -18,11 +18,7 @@ $(TARGET): $(OBJS)
 	$(CC) $(TARGET).cpp -o $@ $^
 
 
-all: clean run clean
-
-run: $(TARGET)
-	./$(TARGET)
+all: clean $(OBJS)
 
 clean:
-	$(RM) $(TARGET)
 	$(RM) $(ODIR)/*
