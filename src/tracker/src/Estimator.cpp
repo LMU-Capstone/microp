@@ -21,7 +21,7 @@ void Estimator::estimate_miss(){
 void Estimator::reduce_velocity_confidence(){
     for(auto i = this->past_velocities.begin(); i < this->past_velocities.end(); i++){
         for(auto j = (*i).begin(); j < (*i).end(); j++){
-            (*j)/(this->velocity_bias);
+            (*j)/(this->get_velocity_bias());
         }
     }
 }
