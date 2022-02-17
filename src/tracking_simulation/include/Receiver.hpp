@@ -18,6 +18,10 @@ class Receiver {
         void set_pattern(VelocityPattern newVelocityPattern){
             this->velocityPattern = newVelocityPattern;
         }
+
+        // getters 
+        float get_x(){return this->x;}
+        float get_y(){return this->y;}
         
     //output and operator casting
     friend std::ostream& operator<<(std::ostream& os, Receiver& r) {
