@@ -5,7 +5,7 @@
 
 #include "include/global.hpp"
 #include "include/VelocityPattern.hpp"
-#include "include/Receiver.hpp"
+#include "include/Endpoint.hpp"
 
 double time_function(std::function<void()> );
 
@@ -17,9 +17,11 @@ int main() {
     VelocityPattern p(new_pattern);
     std::cout << p;
 
-    for(float cur_time = 0.0; cur_time < 10; cur_time++){
+    for(float cur_time = 0.0; cur_time < 9; cur_time++){
         std::cout << p.get_current_velocity(cur_time)[0] << ", " << p.get_current_velocity(cur_time)[1] << std::endl;
     }
+    
+    std::cout << p.get_final_time();
 
     std::cout << "\n";
     return 0;
