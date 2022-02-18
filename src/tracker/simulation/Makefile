@@ -3,6 +3,7 @@
 CC = g++
 CFLAGS = -Ofast -std=c++11
 TARGET = main
+TRACKER_DIR = ./build
 
 SRC_DIR := ./src
 DEPS := ./include
@@ -10,15 +11,20 @@ ODIR := ./build
 SRC_FILES := $(wildcard $(SRC_DIR)/*.cpp)
 OBJS := $(patsubst $(SRC_DIR)/%.cpp,$(ODIR)/%.o,$(SRC_FILES))
 
+
 # Compile dependencies
 $(ODIR)/%.o: $(SRC_DIR)/%.cpp $(DEPS)/%.hpp
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(TARGET): $(OBJS)
-	$(CC) $(TARGET).cpp -o $@ $^
+	$(CC) $(TARGET).cpp -o $@ $^ $(TRACKER_DIR)/Scanner.o $(TRACKER_DIR)/Estimator.o
 
 
-all: clean run clean
+all: get_tracker run clean
+
+get_tracker: 
+	cp ../tracker/build/* ./build/
+
 
 run: $(TARGET)
 	./$(TARGET)
